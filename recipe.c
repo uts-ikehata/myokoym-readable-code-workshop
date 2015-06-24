@@ -10,14 +10,14 @@ main(int argc, char *argv[]) {
   int    id;
   int		output_id = 0;
 
-  if (argc == 3) {
-    output_id = atoi(argv[2]);
-  }
-
   file = fopen(file_name, "r");
   if (file == NULL) {
     fprintf(stderr, "ファイルをオープンできません: <%s>\n", file_name);
     return 1;
+  }
+  
+  if (argc == 3) {
+    output_id = atoi(argv[2]);
   }
 
 	for (id = 1; fgets(line, LINE_BUFFER_SIZE, file); id++) {

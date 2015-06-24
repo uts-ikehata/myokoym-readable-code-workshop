@@ -15,3 +15,10 @@ recipe.cをコンパイルして実行してください。
 $ gcc recipe.c -o recipe
 $ ./recipe recipe-data.txt
 ```
+
+IDを指定してそのレシピのみ表示したい場合は、
+コマンドライン引数にIDを追加してください。
+```bash
+$ ./recipe recipe-data.txt 2
+$2:親子丼
+```
