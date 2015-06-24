@@ -7,11 +7,11 @@ main(int argc, char *argv[]) {
   FILE *file;
   char line[LINE_BUFFER_SIZE];
   char *file_name = argv[1];
-  int  id;
+  int    id;
 
   file = fopen(file_name, "r");
   if (file == NULL) {
-    fprintf(stderr, "繝輔ぃ繧､繝ｫ繧偵が繝ｼ繝励Φ縺ｧ縺阪∪縺帙ｓ: <%s>\n", file_name);
+    fprintf(stderr, "ファイルをオープンできません: <%s>\n", file_name);
     return 1;
   }
 
